@@ -20,7 +20,7 @@ MARKET_ID = 'index-cooperative'
 # Your bot's token goes here. This can be found on the Discord developers
 # portal.
 ################################################################################
-#BOT_TOKEN = 'Insert Discord BOT ID Here'
+BOT_TOKEN = 'index-cooperative-token'
 ################################################################################
 
 print('\n---------- V² DISCORD x COINGECKO BOT ----------\n')
@@ -87,5 +87,5 @@ async def on_ready():
 ################################################################################
 # Run the client.
 ################################################################################
-client.run(index-cooperative)
+client.run(BOT_TOKEN )
 ################################################################################
