@@ -1,6 +1,7 @@
 import asyncio
 import requests
 import os
+import discord
 
 from discord import (
     Activity,
