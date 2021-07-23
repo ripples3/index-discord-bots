@@ -1,5 +1,6 @@
 import asyncio
 import requests
+import os
 
 from discord import (
     Activity,
@@ -87,5 +88,5 @@ async def on_ready():
 ################################################################################
 # Run the client.
 ################################################################################
-client.run('BOT_TOKEN')
+client.run(os.environ['BOT_TOKEN_INDEX]')
 ################################################################################
