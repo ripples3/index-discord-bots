@@ -20,7 +20,7 @@ MARKET_ID = 'defipulse-index'
 # Your bot's token goes here. This can be found on the Discord developers
 # portal.
 ################################################################################
-BOT_TOKEN = 'Insert Discord BOT ID Here'
+#BOT_TOKEN = 'Insert Discord BOT ID Here'
 ################################################################################
 
 print('\n---------- V² DISCORD x COINGECKO BOT ----------\n')
@@ -87,5 +87,5 @@ async def on_ready():
 ################################################################################
 # Run the client.
 ################################################################################
-client.run(BOT_TOKEN)
+client.run(os.environ['BOT_TOKEN_DPI'])
 ################################################################################
