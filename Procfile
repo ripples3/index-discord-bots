@@ -1,1 +1,1 @@
-worker: python /crypto-ticker/index-cooperative.py
+worker: python crypto-ticker/index-cooperative.py
