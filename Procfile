@@ -1,1 +1,1 @@
-worker: python crypto-ticker/index-cooperative.py
+worker: python index-discord-bots/crypto-ticker/index-cooperative.py
