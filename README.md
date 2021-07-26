@@ -38,5 +38,22 @@ Follow the instructions below to create Discord Bot
 
 
 
-OPTION 2: Using Heroku
+## OPTION 2: Using Heroku
+
+### Step 1
+**Fork this repo**
+
+### Step 2
+**Connect GitHub to Heroku**
+![image](https://user-images.githubusercontent.com/45053256/126972133-921bb5cb-79e0-4221-be73-ece6ee0484ed.png)
+
+### Step 3
+**Deploy Branch**
+![image](https://user-images.githubusercontent.com/45053256/126972437-2ed8cf8c-f5a7-4a35-ac3c-fad315a28d59.png)
+
+### Step 4
+**Add the Discord Private Token on Config Vars**
+![image](https://user-images.githubusercontent.com/45053256/126974212-09baa148-5e5a-4fdf-811e-21ed027a0bc0.png)
+
+
 
