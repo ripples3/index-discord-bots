@@ -29,6 +29,9 @@ Follow the instructions below to create Discord Bot
 **INDEX**
 ```https://discord.com/api/oauth2/authorize?client_id=866740889820069890&permissions=0&scope=bot```
 
+**BED**
+```https://discord.com/api/oauth2/authorize?client_id=872397304089419806&permissions=0&scope=bot```
+
 ### Step 2
 #### Select a Server then add
 
