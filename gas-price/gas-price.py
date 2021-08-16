@@ -29,25 +29,20 @@ def main(source, verbose=False):
     import asyncio
     import os
 
-    # 1. Load config
-   # filename = 'gas_config.yaml'
-  #  with open(filename) as f:
-  #      config = yaml.load(f, Loader=yaml.Loader)
-
-    # 2. Connect w the bot
+    # 1. Connect w the bot
     client = discord.Client()
 
     async def send_update(slow, standard, fast, rapid):
        # nickname = f'Fast: {fast} gwei'
         status = f'🚀{rapid}  🚶{standard} 🐌{slow}'
-      #  await client.get_guild(config['guildId']).me.edit(nick=nickname)
+       # await client.get_guild(config['guildId']).me.edit(nick=nickname)
         await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching,name=status))
 
         for guild in client.guilds:
         #    guser = guild.get_member(bot.user.id);
             await guild.me.edit(nick=f'Fast: {fast} gwei');
 
-        await asyncio.sleep(10) # in seconds
+        await asyncio.sleep(30) # in seconds
 
     @client.event
     async def on_ready():
@@ -55,12 +50,12 @@ def main(source, verbose=False):
         When discord client is ready
         """
         while True:
-            # 3. Fetch gas
+            # 2. Fetch gas
             if source == 'gasnow':
                 gweiList = get_gas_from_gasnow(verbose=verbose)
             else:
                 raise NotImplemented('Unsupported source')
-            # 4. Feed it to the bot
+            # 3. Feed it to the bot
             await send_update(*gweiList)
 
     client.run(os.environ['BOT_TOKEN_GAS_PRICE'])
