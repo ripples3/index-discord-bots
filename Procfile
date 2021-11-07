@@ -4,4 +4,4 @@ worker2: python crypto-ticker/btc-2x-flexible-leverage-index.py
 worker3: python crypto-ticker/eth-2x-flexible-leverage-index.py
 worker4: python crypto-ticker/metaverse-index.py
 worker5: python crypto-ticker/bankless-bed-index.py
-worker6: python gas-price/gas-price.py
+worker6: python gas-price_new.py
