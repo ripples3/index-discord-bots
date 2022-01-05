@@ -37,6 +37,7 @@ if r.status_code > 400:
     exit()
 else:
     token_name = r.json()['symbol'].upper()
+    token_name1 = r.json()['market_data']['market_cap']['usd']
     print(f'{dt.utcnow()} | Found {token_name}.')
 ################################################################################
 
@@ -51,13 +52,14 @@ client = Client()
 ################################################################################
 # Client's on_ready event function. We do everything here.
 ################################################################################
+
 @client.event
 async def on_ready():
     errored_guilds = []
     await client.change_presence(
         activity=Activity(
             #name=f'{token_name}/USD on CoinGecko',
-            name=f'{token_name}/USD on CoinGecko',
+            name=f'${round(float(token_name1/1000000),2)}M MCap on CoinGecko',
             type=ActivityType.watching,
         ),
     )

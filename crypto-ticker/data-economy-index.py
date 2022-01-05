@@ -15,14 +15,14 @@ from datetime import datetime as dt
 # Market ID goes here. This can be found by going to the token's page on
 # CoinGecko ex. --> https://www.coingecko.com/en/coins/<id>.
 ################################################################################
-MARKET_ID = 'index-cooperative'
+MARKET_ID = 'data-economy-index'
 ################################################################################
 
 ################################################################################
 # Your bot's token goes here. This can be found on the Discord developers
 # portal.
 ################################################################################
-#BOT_TOKEN = 'index-cooperative-token'
+BOT_TOKEN = 'Insert Discord BOT ID Here'
 ################################################################################
 
 print('\n---------- V² DISCORD x COINGECKO BOT ----------\n')
@@ -91,5 +91,5 @@ async def on_ready():
 ################################################################################
 # Run the client.
 ################################################################################
-client.run(os.environ['BOT_TOKEN_INDEX'])
+client.run(os.environ['BOT_TOKEN_DATA'])
 ################################################################################
