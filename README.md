@@ -35,6 +35,7 @@ Follow the instructions below to create Discord Bot
 **ETH Gas Price**
 ```https://discord.com/api/oauth2/authorize?client_id=875370621394116719&permissions=0&scope=bot```
 
+
 ### Step 2
 #### Select a Server then add
 

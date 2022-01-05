@@ -59,7 +59,11 @@ async def on_ready():
     await client.change_presence(
         activity=Activity(
             #name=f'{token_name}/USD on CoinGecko',
+
             name=f'${round(float(token_name1/1000000),2)}M MCap on CoinGecko',
+
+            name=f'{token_name}/USD on CoinGecko',
+
             type=ActivityType.watching,
         ),
     )
